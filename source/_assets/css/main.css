@@ -1,0 +1,32 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+code:not(.torchlight) {
+    @apply px-0.5 py-1 rounded bg-gray-100 whitespace-nowrap;
+}
+
+pre {
+    @apply my-4 rounded overflow-x-auto;
+}
+
+pre code.torchlight {
+    @apply block py-4 min-w-max;
+}
+
+pre code.torchlight .line {
+    @apply px-4;
+}
+
+pre code.torchlight .line-number,
+pre code.torchlight .summary-caret {
+    @apply mr-4;
+}
+
+.button {
+    @apply inline-block rounded-3xl px-5 py-3 text-sm font-semibold shadow-sm transition-colors bg-white text-black;
+}
+
+.button--blue {
+    @apply bg-[#1c60ad] hover:bg-[#3675c0] text-white;
+}

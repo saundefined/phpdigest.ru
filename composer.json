@@ -1,0 +1,15 @@
+{
+  "require": {
+    "php": "8.3",
+    "tightenco/jigsaw": "^1.7",
+    "torchlight/torchlight-jigsaw": "^0.3.4",
+    "ext-gd": "*",
+    "samdark/sitemap": "^2.4",
+    "ext-dom": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
