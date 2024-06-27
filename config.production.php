@@ -2,5 +2,5 @@
 
 return [
     'production' => true,
-    'baseUrl' => 'https://phpdigest.ru',
+    'baseUrl' => 'https://beta.phpdigest.ru',
 ];

@@ -5,24 +5,47 @@ on:
     branches:
       - master
 
+env:
+  TORCHLIGHT_API_TOKEN: ${{ secrets.TORCHLIGHT_API_TOKEN }}
+
 jobs:
   build-site:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+        
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.3
+          tools: composer:v2
+        
       - name: Install Composer Dependencies
         run: composer install --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
+
       - name: Install NPM Dependencies
         run: npm install
+
       - name: Build Site
-        run: npm run production
+        run: npm run prod
+        
+      - name: Create CNAME File
+        run: echo "beta.phpdigest.ru" >> build_production/CNAME
+
       - name: Stage Files
         run: git add -f build_production
+
       - name: Commit files
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git commit -m "Build for deploy"
+
       - name: Publish
         run: |
           git subtree split --prefix build_production -b gh-pages
