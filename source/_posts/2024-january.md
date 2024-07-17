@@ -3,7 +3,8 @@ title: Январь 2024
 author:
   - sergey
   - roman
-date: 2024-01-31
+date: 2024-01-25
+year: 2024
 external:
   - telegram: https://t.me/phpdigest
   - phpannotated: https://blog.jetbrains.com/phpstorm/2024/01/php-annotated-january-2024/

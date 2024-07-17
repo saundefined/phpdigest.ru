@@ -29,7 +29,11 @@ return [
             'sort' => '-title',
             'posts' => function ($page, $allPosts) {
                 return $allPosts->filter(function ($post) use ($page) {
-                    return str_contains($post->getFilename(), $page->title);
+                    if (!$post->year || !$page->title) {
+                        return false;
+                    }
+
+                    return (int)$post->year === (int)$page->title;
                 });
             },
         ],

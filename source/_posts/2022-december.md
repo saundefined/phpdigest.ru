@@ -3,7 +3,8 @@ title: Декабрь 2022
 author:
   - sergey
   - roman
-date: 2022-12-31
+date: 2022-12-20
+year: 2022
 external:
   - telegram: https://t.me/phpdigest
   - phpannotated: https://blog.jetbrains.com/phpstorm/2022/12/php-annotated-december-2022/

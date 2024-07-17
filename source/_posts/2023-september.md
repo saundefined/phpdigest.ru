@@ -3,7 +3,8 @@ title: Сентябрь 2023
 author:
   - sergey
   - roman
-date: 2023-09-30
+date: 2023-09-27
+year: 2023
 external:
   - telegram: https://t.me/phpdigest
   - phpannotated: https://blog.jetbrains.com/phpstorm/2023/09/php-annotated-september-2023/

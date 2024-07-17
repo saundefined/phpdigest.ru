@@ -3,7 +3,8 @@ title: Сентябрь 2022
 author:
   - sergey
   - roman
-date: 2022-09-30
+date: 2022-10-03
+year: 2022
 external:
   - telegram: https://t.me/phpdigest
   - phpannotated: https://blog.jetbrains.com/phpstorm/2022/10/php-annotated-september-2022/

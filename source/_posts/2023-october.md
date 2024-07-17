@@ -3,7 +3,8 @@ title: Октябрь 2023
 author:
   - sergey
   - roman
-date: 2023-10-31
+date: 2023-10-30
+year: 2023
 external:
   - telegram: https://t.me/phpdigest
   - phpannotated: https://blog.jetbrains.com/phpstorm/2023/10/php-annotated-october-2023/

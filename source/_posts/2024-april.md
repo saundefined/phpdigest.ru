@@ -3,7 +3,8 @@ title: Апрель 2024
 author:
   - sergey
   - roman
-date: 2024-04-30
+date: 2024-04-29
+year: 2024
 external:
   - telegram: https://t.me/phpdigest
   - phpannotated: https://blog.jetbrains.com/phpstorm/2024/04/php-annotated-april-2024/

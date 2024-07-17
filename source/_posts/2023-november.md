@@ -3,7 +3,8 @@ title: Ноябрь 2023
 author:
   - sergey
   - roman
-date: 2023-11-30
+date: 2023-12-04
+year: 2023
 external:
   - telegram: https://t.me/phpdigest
   - phpannotated: https://blog.jetbrains.com/phpstorm/2023/12/php-annotated-november-2023/

@@ -3,7 +3,8 @@ title: Январь 2023
 author:
   - sergey
   - roman
-date: 2023-01-31
+date: 2023-01-19
+year: 2023
 external:
   - telegram: https://t.me/phpdigest
   - phpannotated: https://blog.jetbrains.com/phpstorm/2023/01/php-annotated-january-2023/

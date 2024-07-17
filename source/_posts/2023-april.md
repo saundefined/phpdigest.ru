@@ -3,7 +3,8 @@ title: Апрель 2023
 author:
   - sergey
   - roman
-date: 2023-04-30
+date: 2023-04-21
+year: 2023
 external:
   - telegram: https://t.me/phpdigest
   - phpannotated: https://blog.jetbrains.com/phpstorm/2023/04/php-annotated-april-2023/

@@ -3,7 +3,8 @@ title: Февраль-Март 2024
 author:
   - sergey
   - roman
-date: 2024-03-12
+date: 2024-03-11
+year: 2024
 external:
   - telegram: https://t.me/phpdigest
   - phpannotated: https://blog.jetbrains.com/phpstorm/2024/03/php-annotated-february-march-2024/

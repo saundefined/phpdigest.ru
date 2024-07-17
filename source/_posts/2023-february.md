@@ -4,6 +4,7 @@ author:
   - sergey
   - roman
 date: 2023-02-28
+year: 2023
 external:
   - telegram: https://t.me/phpdigest
   - phpannotated: https://blog.jetbrains.com/phpstorm/2023/02/php-annotated-february-2023/

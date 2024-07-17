@@ -3,7 +3,8 @@ title: Август 2022
 author:
   - sergey
   - roman
-date: 2022-08-31
+date: 2022-08-24
+year: 2022
 external:
   - telegram: https://t.me/phpdigest
   - phpannotated: https://blog.jetbrains.com/phpstorm/2022/08/php-annotated-august-2022/
