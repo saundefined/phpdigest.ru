@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://beta.phpdigest.ru/post/2024-january">
+    <meta name="description" content="Подборка свежих новостей, инструментов, видео и материалов из мира PHP">
+    <title>Январь 2024 | PHP-дайджест</title>
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=6dd49a5ac845333ec0dcb2ac833bc5fb">
+
+    <meta property="og:url" content="https://beta.phpdigest.ru/post/2024-january">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Январь 2024 | PHP-дайджест">
+    <meta property="og:description" content="Подборка свежих новостей, инструментов, видео и материалов из мира PHP">
+    <meta property="og:image" content="https://beta.phpdigest.ru/assets/icons/share.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="https://beta.phpdigest.ru/post/2024-january">
+    <meta property="twitter:url" content="https://beta.phpdigest.ru/post/2024-january">
+    <meta name="twitter:title" content="Январь 2024 | PHP-дайджест">
+    <meta name="twitter:description" content="Подборка свежих новостей, инструментов, видео и материалов из мира PHP">
+    <meta name="twitter:image" content="https://beta.phpdigest.ru/assets/icons/share.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="https://beta.phpdigest.ru/assets/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://beta.phpdigest.ru/assets/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://beta.phpdigest.ru/assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://beta.phpdigest.ru/assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://beta.phpdigest.ru/assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://beta.phpdigest.ru/assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://beta.phpdigest.ru/assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://beta.phpdigest.ru/assets/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://beta.phpdigest.ru/assets/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://beta.phpdigest.ru/assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://beta.phpdigest.ru/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://beta.phpdigest.ru/assets/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://beta.phpdigest.ru/assets/icons/favicon-16x16.png">
+
+    <link rel="manifest" href="https://beta.phpdigest.ru/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://beta.phpdigest.ru/assets/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="alternate" type="application/atom+xml" href="https://beta.phpdigest.ru/feed/atom.xml"/>
+</head>
+<body class="text-gray-900 font-sans antialiased">
+<header class="bg-white" x-data="{ open: false }">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <a href="https://beta.phpdigest.ru/" class="-m-1.5 p-1.5 flex flex-row gap-2">
+            <img class="h-8 w-auto" src="/assets/images/logo.png" alt="PHP-дайджест">
+            <span class="text-xl font-medium">PHP-дайджест</span>
+        </a>
+        <div class="flex lg:hidden">
+            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                    @click="open = true">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                     aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                </svg>
+            </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+            <a href="https://beta.phpdigest.ru/posts" class="text-sm font-semibold leading-6 text-gray-900">Дайджесты</a>
+            <a href="https://beta.phpdigest.ru/team" class="text-sm font-semibold leading-6 text-gray-900">Команда</a>
+        </div>
+    </nav>
+
+    <div class="lg:hidden" role="dialog" x-show="open">
+        <div class="fixed inset-0 z-10"></div>
+        <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+                <a href="https://beta.phpdigest.ru/" class="-m-1.5 p-1.5 flex flex-row gap-2">
+                    <img class="h-8 w-auto" src="/assets/images/logo.png" alt="PHP-дайджест">
+                    <span class="text-xl font-medium">PHP-дайджест</span>
+                </a>
+                <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" @click="open = false">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                         aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6 flow-root">
+                <div class="-my-6">
+                    <div class="space-y-2 py-6">
+                        <a href="https://beta.phpdigest.ru/posts"
+                           class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Дайджесты</a>
+                        <a href="https://beta.phpdigest.ru/team"
+                           class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Команда</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="bg-white px-6 py-24 lg:px-8">
+        <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+            <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Январь 2024</h1>
+
+            <div class="relative w-full mt-12">
+                <img src="/assets/images/covers/2024-january.png"
+                     alt="Январь 2024"
+                     class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-fill">
+                <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+            </div>
+
+            <div class="prose mt-12">
+                <p>Подборка свежих новостей, инструментов, видео и материалов из мира PHP.</p>
+
+<p>Приятного чтения!</p>
+
+<h2>Новости</h2>
+
+<h3>Вышли <a href="https://www.php.net/ChangeLog-8.php#8.2.15">PHP 8.2.15</a> и <a href="https://www.php.net/ChangeLog-8.php#8.3.2">PHP 8.3.2</a></h3>
+
+<p>🐛 Выпуски с исправлениями ошибок вышли по расписанию.</p>
+
+<h3><a href="https://thephp.foundation/blog/2024/01/03/the-php-foundation-team-update-2024/">The PHP Foundation Team Update 2024</a></h3>
+
+<p>В этом году к PHP Foundation присоединятся еще четыре разработчика для дальнейшего развития
+PHP: <a href="https://github.com/devnexen">David Carlier</a>,
+<a href="https://github.com/asgrim">James Titcumb</a>, <a href="https://github.com/SakiTakamachi">Saki Takamachi</a>
+и <a href="https://github.com/shivammathur">Shivam Mathur</a>.</p>
+
+<p>Поприветствуем новых членов команды и пожелаем им больших достижений.</p>
+
+<h3><a href="https://www.tiobe.com/tiobe-index/">Рейтинг TIOBE</a></h3>
+
+<p>Компания TIOBE Software опубликовала январский рейтинг популярности языков программирования, в котором по сравнению с
+январем 2023 года JavaScript переместился с 7 на 6 место, PHP – с 10 на 7,
+Scratch – с 20 на 10, Go – с 12 на 11, Fortran – с 27 на 12, Kotlin - с 25 на 17, а Cobol – с 31 на 20.
+Языком года был назван C#, который сохранил за собой 5-е место, но стал лидером по приросту (+1,43 %).</p>
+
+<p><img src="/assets/images/post/2024-january/tiobe.png" alt="" /></p>
+
+<h3>Открыта программа раннего доступа <a href="https://blog.jetbrains.com/phpstorm/2024/01/phpstorm-2024-1-early-access-program-is-now-open/">PhpStorm PhpStorm 2024.1</a></h3>
+
+<p>С помощью программы раннего доступа вы можете попробовать новые возможности PhpStorm и оставить свой отзыв команде
+PhpStorm. Сборки EAP бесплатны для использования и не требуют лицензии.</p>
+
+<p>В этой сборке реализована поддержка PHPUnit 11, улучшена работа с фреймворком для тестирования Pest, улучшены функции
+анализа кода, а также внесено множество других улучшений.</p>
+
+<h2>PHP Core</h2>
+
+<p>Большинство новостей ядра PHP подробно освещаются в
+серии <a href="https://thephp.foundation/blog/tag/roundup/">PHP Core Roundup</a> от PHP Foundation, мы лишь быстро по ним
+пробежимся:</p>
+
+<h3>📣 <a href="https://wiki.php.net/rfc/opt_in_dom_spec_compliance">RFC: Opt-in DOM spec-compliance</a></h3>
+
+<p>Модуль DOM изначально соответствовал спецификации <a href="https://www.w3.org/TR/DOM-Level-3-Core/">DOM Core Level 3</a>,
+но не может поддерживать «<a href="https://dom.spec.whatwg.org/">Живую спецификацию</a>» из-за множества ошибок.</p>
+
+<p>Это приводит к тому, что люди пытаются обойти эти ошибки, полагаясь на ещё большие ошибки или на недокументированные
+побочные эффекты, что в итоге приводит к ещё большим проблемам. И эти ошибки не ограничиваются только HTML, они также
+распространяются на XML-документы.</p>
+
+<p><a href="https://wiki.php.net/rfc/domdocument_html5_parser">HTML 5 RFC</a> уже одобрен для PHP 8.4. Теперь Niels Dossche предлагает
+построить на его основе «Живую спецификацию», сохранив старую для обратной совместимости.</p>
+
+<h3>📣 <a href="https://wiki.php.net/rfc/dedicated_stream_bucket">Dedicated StreamBucket class</a></h3>
+
+<p>Сейчас нет отдельного класса для работы с бакетами потока и используется <code>stdClass</code>.</p>
+
+<p>Máté Kocsis предлагает добавить новый окончательный класс <code>StreamBucket</code> для облегчения статического анализа и улучшения
+обратной связи.</p>
+
+<h3>📣 <a href="https://wiki.php.net/rfc/mb_ucfirst">RFC: Multibyte for ucfirst, lcfirst functions, mb_ucfirst mb_lcfirst</a></h3>
+
+<p>Yuya Hamada предлагает добавить многобайтовую поддержку для функций <code>ucfirst</code> и <code>lcfirst</code>; по аналогии, в PHP 8.4 уже
+будет доступна многобайтовая поддержка для функций <code>trim</code>, <code>ltrim</code> и <code>rtrim</code>.</p>
+
+<h3>📣 <a href="https://wiki.php.net/rfc/raising_zero_to_power_of_negative_number">RFC: Raising zero to the power of negative number</a></h3>
+
+<p>Сейчас возведение в отрицательную степень нуля возвращает <code>float(INF)</code>.
+Jorg Sowa предлагает PHP 8.4 выдавать предупреждение об устаревании, а начиная с PHP 9.0 – выбрасывать исключение.</p>
+
+<h3>📣 <a href="https://wiki.php.net/rfc/deprecate-implicitly-nullable-types">RFC: Deprecate implicitly nullable parameter types</a></h3>
+
+<p>В настоящее время использование <code>null</code> в качестве значения по умолчанию для параметра функции разрешено и не приводит к
+ошибке, даже если тип параметра и не является <code>nullable</code>.</p>
+
+<p>Более того, существует небольшое несоответствие в разрешении необязательных параметров перед обязательными. Например,
+следующая сигнатура является допустимой:</p>
+
+<pre><code data-theme="dracula" data-lang="php" class='language-php torchlight' style='background-color: #282A36; --theme-selection-background: #BD93F9;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#6272A4; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FF79C6;">function</span><span style="color: #F8F8F2;"> </span><span style="color: #50FA7B;">foo</span><span style="color: #F8F8F2;">(</span><span style="color: #8BE9FD;">T1</span><span style="color: #F8F8F2;"> $a, </span><span style="color: #8BE9FD;">T2</span><span style="color: #F8F8F2;"> $b </span><span style="color: #FF79C6;">=</span><span style="color: #F8F8F2;"> </span><span style="color: #BD93F9;">null</span><span style="color: #F8F8F2;">, </span><span style="color: #8BE9FD;">T3</span><span style="color: #F8F8F2;"> $c) {}</span></div></code></pre>
+
+<p>Máté Kocsis и Gina Peter Banyard предлагают отказаться от таких объявлений и требовать явных пометок <code>nullable</code>.
+Это изменение, ломающее обратную совместимость, но переход довольно прост и может быть автоматизирован.</p>
+
+<pre><code data-theme="dracula" data-lang="php" class='language-php torchlight' style='background-color: #282A36; --theme-selection-background: #BD93F9;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#6272A4; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #FF79C6;">function</span><span style="color: #F8F8F2;"> </span><span style="color: #50FA7B;">foo</span><span style="color: #F8F8F2;">(</span><span style="color: #8BE9FD;">T</span><span style="color: #F8F8F2;"> $var </span><span style="color: #FF79C6;">=</span><span style="color: #F8F8F2;"> </span><span style="color: #BD93F9;">null</span><span style="color: #F8F8F2;">) {} </span><span style="color: #6272A4;">// Ошибка уровня E_WARNING, если RFC будет принят</span></div><div class='line'><span style="color:#6272A4; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">2</span><span style="color: #FF79C6;">function</span><span style="color: #F8F8F2;"> </span><span style="color: #50FA7B;">foo</span><span style="color: #F8F8F2;">(</span><span style="color: #FF79C6;">?</span><span style="color: #8BE9FD;">T</span><span style="color: #F8F8F2;"> $var </span><span style="color: #FF79C6;">=</span><span style="color: #F8F8F2;"> </span><span style="color: #BD93F9;">null</span><span style="color: #F8F8F2;">) {} </span><span style="color: #6272A4;">// Всё в порядке</span></div></code></pre>
+
+<h3>✅ <a href="https://wiki.php.net/rfc/improve_callbacks_dom_and_xsl">RFC: Improve callbacks in ext/dom and ext/xsl</a></h3>
+
+<p>Методы <code>XSLTProcessor::registerPHPFunctions()</code> и <code>DOMXPath::registerPhpFunctions()</code> смогут использовать тип <code>callable</code> в
+PHP 8.4.</p>
+
+<h3>✅ <a href="https://wiki.php.net/rfc/resource_to_object_conversion">RFC: Resource to object conversion</a></h3>
+
+<p>В PHP ведётся долгосрочная работа по переводу всех ресурсов в объекты.
+RFC предложил план, как осуществить этот переход.</p>
+
+<p>Вторичное голосование определило, что ресурсы основного потока (поток, постоянный поток), вспомогательные ресурсы
+потока (контексты, фильтры, бригады, бакеты) и ресурс <code>Process</code> будут преобразованы в PHP 9.0.</p>
+
+<p>Остальные ресурсы будут постепенно преобразованы в PHP 8.4 или другой минорной версии,
+так изменение обратной совместимости будет незначительным.</p>
+
+<h3>📊 <a href="https://wiki.php.net/rfc/promote_php_foundation">RFC: Promote the PHP Foundation</a></h3>
+
+<p>Нетехнический RFC, возникший из обсуждения PR в репозитории <a href="https://github.com/php/web-php/pull/821">php/web-php</a>,
+стоит ли продвигать PHP Foundation на сайте php.net.</p>
+
+<h3>📊 <a href="https://wiki.php.net/rfc/final_by_default_anonymous_classes">RFC: Final by default anonymous classes</a></h3>
+
+<p>Daniil Gentili предлагает сделать все анонимные классы окончательными по умолчанию и предоставить новое ключевое слово
+open, чтобы при необходимости сделать их неокончательными. Это похоже на <code>new open class {}</code> в Kotlin.</p>
+
+<h3>📊 <a href="https://wiki.php.net/rfc/policy-repository">RFC: Policy Repository</a></h3>
+
+<p>RFC был принят единогласно, политики будут храниться в репозитории <a href="https://github.com/php/policies">php/policies</a>.</p>
+
+<h3>📊 <a href="https://wiki.php.net/rfc/rfc1867-non-post">RFC: RFC1867 for non-POST HTTP verbs</a></h3>
+
+<p>RFC1867 определяет тип контента <code>multipart/form-data</code>. PHP поддерживает анализ этого типа контента, но только для
+POST-запросов. Если осуществляется POST-запрос и тип содержимого <code>multipart/form-data</code>, тело запроса немедленно
+обрабатывается перед запуском PHP-скрипта и заполняется в суперглобальные переменные <code>$_POST</code> и <code>$_FILES</code>. Эта функция
+запускается автоматически и не предоставляется непосредственно пользователю.</p>
+
+<p>Ilija Tovilo предлагает добавить новую функцию <code>request_parse_body()</code>, чтобы вывести существующую функциональность на
+пользовательский уровень и использовать её для других HTTP-методов, например, <code>PUT</code> и <code>PATCH</code>.</p>
+
+<h3>🎉 <a href="https://twitter.com/ThePHPF/status/1732082795831337402">Новый PECL появится в 2024 году</a></h3>
+
+<p>PHP Foundation собирается пересмотреть способ установки модулей в PHP.</p>
+
+<p>Сейчас модули распространяются с помощью устаревшего сайта pecl.php.net и инструмента <code>pecl</code>. Цель состоит в том, чтобы
+предоставить современную альтернативу, которая будет проще в использовании как для пользователей, так и для
+разработчиков модулей.</p>
+
+<h2>Инструменты</h2>
+
+<ul>
+<li><a href="https://www.npmjs.com/package/@php-wasm/cli">@php-wasm/cli</a> – Запуск PHP с WASM в терминале!</li>
+</ul>
+
+<pre><code data-theme="dracula" data-lang="text" class='torchlight' style='background-color: #282A36; --theme-selection-background: #BD93F9;'><!-- Syntax highlighted by torchlight.dev --><div class='line'><span style="color:#6272A4; text-align: right; -webkit-user-select: none; user-select: none;" class="line-number">1</span><span style="color: #F8F8F2;">npx @php-wasm/cli -r &#39;echo &quot;Привет, мир!&quot;;&#39;</span></div></code></pre>
+
+<p>Спасибо команде WordPress за продвижение этой идеи!</p>
+
+<p>На случай, если вы пропустили, есть также локальная среда разработки на основе WASM для
+PHP <a href="https://github.com/WordPress/playground-tools/tree/trunk/packages/wp-now/#readme">wp-now</a>.</p>
+
+<ul>
+<li><p>Вышел <a href="https://github.com/nikic/PHP-Parser/releases/tag/v5.0.0">nikic/PHP-Parser</a>
+5.0.0 – <a href="https://github.com/nikic/PHP-Parser/releases/tag/v5.0.0">Список изменений</a> впечатляет.</p></li>
+<li><p><a href="https://github.com/spatie/holidays">spatie/holidays</a> – Пакет для расчёта дней, когда вам не нужно
+работать! <a href="https://freek.dev/2641-a-mini-package-to-calculate-public-holidays-in-a-country">Проверьте</a>, как это
+работает.</p></li>
+<li><p><a href="https://github.com/spatie/tabular-assertions">spatie/tabular-assertions</a> – Позволяет создавать табличные утверждения
+с помощью Pest или PHPUnit.</p></li>
+<li><p><a href="https://github.com/denzyldick/phanalist">denzyldick/phanalist</a> – Наглядный и быстрый статический анализатор для PHP,
+созданный на Rust. Он довольно мал по сравнению с PHPStan или Psalm, но хорош для того, чтобы иметь возможность
+<a href="https://dev.to/denzyldick/the-beginning-of-my-php-static-analyzer-in-rust-5bp8">написать свой собственный статический анализатор для PHP</a>
+на Rust.</p></li>
+<li><p><a href="https://github.com/simonhamp/the-og">simonhamp/the-og</a> – Генератор изображений OpenGraph на чистом PHP.</p></li>
+<li><p><a href="https://github.com/doekenorg/decorate-php">doekenorg/decorate-php</a> – Создание PHP-декоратора или прокси на основе
+интерфейса или (абстрактного) класса.</p></li>
+<li><p><a href="https://github.com/owasp-dep-scan/dep-scan">owasp-dep-scan/dep-scan</a> – Инструмент аудита безопасности и рисков нового
+поколения от OWASP, основанный на известных уязвимостях, рекомендациях и лицензионных ограничениях для зависимых
+проектов.</p>
+
+<p>В посте <a href="https://www.linkedin.com/pulse/depscan-php-prabhu-subramanian-jkp3e/">DepScan ❤️ PHP</a> были анонсированы <code>cdxgen</code> и <code>depscan</code> 5.2.0 с поддержкой точного анализа достижимости для
+PHP-приложений, библиотек и плагинов WordPress.</p></li>
+<li><p><a href="https://github.com/valorin/random">valorin/random</a> – Простой пакет-помощник, предназначенный для упрощения генерации
+различных криптографически безопасных случайных значений.</p></li>
+<li><p><a href="https://github.com/theodo-group/llphant">theodo-group/LLPhant</a> – Комплексный PHP Generative AI Framework,
+использующий OpenAI GPT 4. Вдохновлён Langchain и LLamaIndex.</p></li>
+<li><p><a href="https://github.com/julien-boudry/Condorcet">julien-boudry/Condorcet</a> – Приложение командной строки и библиотека PHP,
+предоставляющая механизм выборов с высокоуровневым интерфейсом. Встроенная поддержка 20+ методов голосования, легко
+расширяемая. Поддержка простых выборов или миллиардов голосов в условиях низких ресурсов.</p></li>
+<li><p><a href="https://github.com/archtechx/enums">archtechx/enums</a> – Помощники, позволяющие сделать перечисления PHP ещё лучше.</p></li>
+<li><p><a href="https://github.com/JustSteveKing/php-sdk">JustSteveKing/php-sdk</a> – Базовая библиотека для ваших PHP SDK.</p></li>
+<li><p><a href="https://github.com/danog/php-tokio?tab=readme-ov-file">danog/php-tokio</a> – Использование асинхронных библиотек Rust в
+PHP.</p></li>
+<li><p><a href="https://github.com/joanhey/AdapterMan">joanhey/AdapterMan</a> – Запустите практически любое PHP-приложение асинхронно с
+помощью <a href="https://github.com/walkor/workerman">walkor/workerman</a>, не меняя фреймворк или приложение.</p>
+
+<p><img src="/assets/images/post/2024-january/adapterman.png" alt="" /></p></li>
+</ul>
+
+<h2>Symfony</h2>
+
+<ul>
+<li><a href="https://habr.com/ru/articles/784660/">Использование Symfony / PHP</a></li>
+<li><a href="https://habr.com/ru/articles/785008/">Использование Symfony / PHP (II)</a></li>
+<li><a href="https://habr.com/ru/articles/787958/">По локоть в легаси: пошагово перезапускаем устаревший портал на PHP</a></li>
+</ul>
+
+<h2>Laravel</h2>
+
+<ul>
+<li><a href="https://habr.com/ru/articles/787062/">Headless eCommerce на Laravel: Погружение в модульную архитектуру</a></li>
+<li><a href="https://habr.com/ru/articles/785026/">Изучение мидлварей в Laravel 11</a></li>
+<li><a href="https://habr.com/ru/articles/788946/">Профайлинг Laravel приложений с XDebug и PHPStorm</a></li>
+<li>🎬 <a href="https://youtu.be/R3CB3ctuz3k">Laravel 11 под капотом. Что нового?</a></li>
+<li><a href="https://github.com/stevebauman/autodoc-facades">stevebauman/autodoc-facades</a> – Пакет для автоматической генерации PHP
+doc-аннотаций для фасадов Laravel.</li>
+<li><a href="https://github.com/spatie/laravel-pdf">spatie/laravel-pdf</a> – Пакет для создания PDF-файлов в приложениях Laravel.</li>
+<li><a href="https://github.com/spatie/laravel-export">spatie/laravel-export</a> – Создание пакета статических сайтов из приложения
+Laravel.</li>
+<li><a href="https://github.com/tighten/ziggy">tighten/ziggy</a> – Используйте маршруты Laravel в JavaScript.</li>
+<li><a href="https://github.com/defstudio/telegraph?tab=readme-ov-file">defstudio/telegraph</a> – Пакет Laravel для удобного
+взаимодействия с ботами Telegram.</li>
+<li><a href="https://github.com/nWidart/laravel-modules?tab=readme-ov-file">nWidart/laravel-modules</a> – Управление модулями для
+Laravel.</li>
+</ul>
+
+<h2>Статьи</h2>
+
+<ul>
+<li><a href="https://habr.com/ru/companies/cyberok/articles/787320/">Как защититься от «бестелесных» веб-шеллов</a></li>
+<li><a href="https://habr.com/ru/articles/786412/">Защита JPG-файлов от копирования с помощью Exif и IPTC-тегов</a></li>
+<li><a href="https://habr.com/ru/articles/786398/">MemSess — очередной сервер для работы с сессиями</a></li>
+<li><a href="https://habr.com/ru/articles/784256/">Разборка в Шторме</a></li>
+<li><a href="https://www.opennet.ru/opennews/art.shtml?num=60384">Сравнение эффективности 20 языков программирования</a></li>
+<li><a href="https://habr.com/ru/articles/788098/">Построитель SQL запросов на основе мета-информации миграций БД</a></li>
+</ul>
+
+<h2>Видео</h2>
+
+<ul>
+<li><a href="https://youtu.be/DgVLt7j8Nxo">Обзор Laravel Octane, Roadrunner, FrankenPHP</a></li>
+</ul>
+            </div>
+
+            
+                            <div class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
+                    <div class="grid grid-cols-2">
+                                                                                    <div class="relative flex items-center gap-x-4">
+                                    <img src="https://avatars.githubusercontent.com/u/4685504"
+                                         alt="Сергей Пантелеев"
+                                         class="h-10 w-10 rounded-full bg-gray-50">
+                                    <div class="text-sm leading-6">
+                                        <div class="font-semibold text-gray-900">
+                                            <a href="https://sergeypanteleev.com" target="_blank"
+                                               rel="noopener noreferrer"
+                                            >
+                                                <span class="absolute inset-0"></span>
+                                                Сергей Пантелеев
+                                            </a>
+                                        </div>
+                                        <div class="text-gray-600">Релиз-менеджер PHP 8.2</div>
+                                    </div>
+                                </div>
+                                                                                                                <div class="relative flex items-center gap-x-4">
+                                    <img src="https://avatars.githubusercontent.com/u/1196825"
+                                         alt="Роман Пронский"
+                                         class="h-10 w-10 rounded-full bg-gray-50">
+                                    <div class="text-sm leading-6">
+                                        <div class="font-semibold text-gray-900">
+                                            <a href="https://pronskiy.com" target="_blank"
+                                               rel="noopener noreferrer"
+                                            >
+                                                <span class="absolute inset-0"></span>
+                                                Роман Пронский
+                                            </a>
+                                        </div>
+                                        <div class="text-gray-600">Администратор PHP Foundation</div>
+                                    </div>
+                                </div>
+                                                                        </div>
+                </div>
+            
+                            <div class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
+                    <div class="rounded-lg gap-4 flex flex-col">
+                                                    <div class="group relative bg-white shadow p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
+    <div>
+        <div class="inline-flex rounded-lg p-3 bg-gray-100 ring-4 ring-white">
+            <img src="/assets/images/logo.png" class="h-6 w-6"/>
+        </div>
+    </div>
+    <div class="mt-4">
+        <div class="text-base font-semibold leading-6 text-gray-900">
+            <a href="https://t.me/phpdigest" class="focus:outline-none" target="_blank" rel="noopener noreferrer">
+                <span class="absolute inset-0"></span>
+                PHP Digest
+            </a>
+        </div>
+        <div class="mt-2 text-sm text-gray-500">Краткий дайджест в нашем Telegram</div>
+    </div>
+    <div class="pointer-events-none absolute right-6 top-6 text-gray-300 group-hover:text-gray-400">
+        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z"/>
+        </svg>
+    </div>
+</div>                                                    <div class="group relative bg-white shadow p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500">
+    <div>
+        <div class="inline-flex rounded-lg p-3 bg-[#ee5bd0] ring-4 ring-white">
+            <svg class="h-6 w-6" viewBox="0 0 109 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M101.036 68.728a14.989 14.989 0 0 0 7.209-1.856l-2.094-5.032a10.424 10.424 0 0 1-5.094 1.328c-3.001-.004-5.882-1.315-8.024-3.654-2.142-2.338-3.375-5.518-3.436-8.856V36.594h-4.99V50.69c.068 4.802 1.828 9.383 4.9 12.757 3.072 3.374 7.212 5.27 11.529 5.282ZM3.703 53.764c3.824-.004 7.491-1.697 10.196-4.706 2.704-3.01 4.225-7.09 4.229-11.345 0-.249-.83 1.04-.872 1.553-.349 3.731-1.926 7.187-4.429 9.7-2.502 2.514-5.753 3.908-9.124 3.913a.366.366 0 0 0-.17.015.395.395 0 0 0-.15.093.45.45 0 0 0-.102.152.494.494 0 0 0 .102.525.396.396 0 0 0 .15.092.366.366 0 0 0 .17.016v-.008Z"
+                      fill="#fff"/>
+                <path d="M32.546 43.63H16.711v12.914h15.835V43.63Z" fill="#fff"/>
+                <path d="M18.323 39.22S15.846 53.584 2 53.584" stroke="#fff" stroke-width="3.02" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <path d="M75.954 11.201c.376.968.689 1.964.935 2.982l.181.893a1.235 1.235 0 0 1-.272 1.095.996.996 0 0 1-.74.342.72.72 0 0 1-.223-.047 1.01 1.01 0 0 1-.5-.292 1.189 1.189 0 0 1-.288-.539c-.624-3.202-1.951-6.182-3.863-8.674-1.911-2.492-4.347-4.419-7.09-5.608A16.169 16.169 0 0 0 55.461.146c-2.923.397-5.712 1.593-8.118 3.481-2.406 1.889-4.355 4.41-5.671 7.341a21.724 21.724 0 0 0-1.875 9.453c.086 3.275.9 6.475 2.368 9.315 1.469 2.84 3.546 5.23 6.047 6.96.137.106.248.248.324.413.077.165.116.348.116.534a1.15 1.15 0 0 1 0 .155c-.02.203-.09.396-.2.56-.11.163-.257.29-.426.37a.937.937 0 0 1-.536.08.981.981 0 0 1-.499-.233l-.614-.428c-3.711-2.811-6.46-6.937-7.797-11.706a24.504 24.504 0 0 1 .427-14.564c-14.3 3.712-22.297 21.681-22.297 32.778h.37a43.173 43.173 0 0 0-.342 5.436v24.717h14.997V74.7c0-4.222 1.508-8.272 4.19-11.257 2.684-2.985 6.323-4.663 10.117-4.663 3.794 0 7.433 1.678 10.116 4.663 2.683 2.986 4.19 7.035 4.19 11.257v.108h14.07V44.655h15.123v-17.86c-.025-4.047-1.451-7.926-3.982-10.831-2.532-2.905-5.972-4.61-9.606-4.763Zm-.95 16.168c-.495 0-.98-.163-1.391-.47a2.745 2.745 0 0 1-.923-1.251 3.08 3.08 0 0 1-.142-1.61c.096-.541.335-1.038.685-1.428.35-.39.797-.655 1.283-.763a2.27 2.27 0 0 1 1.448.159c.457.21.849.568 1.124 1.026.275.459.422.998.422 1.55.001.366-.063.729-.189 1.067-.125.339-.31.647-.543.906-.232.259-.509.464-.813.604a2.28 2.28 0 0 1-.96.21Z"
+                      fill="#fff"/>
+            </svg>
+        </div>
+    </div>
+    <div class="mt-4">
+        <div class="text-base font-semibold leading-6 text-gray-900">
+            <a href="https://blog.jetbrains.com/phpstorm/2024/01/php-annotated-january-2024/" class="focus:outline-none" target="_blank" rel="noopener noreferrer">
+                <span class="absolute inset-0"></span>
+                PHP Annotated
+            </a>
+        </div>
+        <div class="mt-2 text-sm text-gray-500">Ещё больше новостей в блоге компании JetBrains</div>
+    </div>
+    <div class="pointer-events-none absolute right-6 top-6 text-gray-300 group-hover:text-gray-400">
+        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z"/>
+        </svg>
+    </div>
+</div>                                                    <div class="group relative bg-white shadow p-6">
+    <div>
+        <div class="inline-flex rounded-lg p-3 bg-[#7843E9] ring-4 ring-white">
+            <svg class="h-6 w-6" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30.6773 27.7357V38.6785L20.7894 44.1499V33.2071L30.6773 27.7357Z" fill="#FFFFFF"/>
+                <path d="M20.7894 33.2071V44.1499L10.873 49.6214V38.6785L20.7894 33.2071Z" fill="#FFFFFF"/>
+                <path d="M10.8731 49.6214L0.985352 44.1499V33.2071L10.8731 38.6785V49.6214Z" fill="#FFFFFF"/>
+                <path d="M0.985352 22.2643L10.8731 16.793L20.7895 22.2643L10.8731 27.7357L0.985352 22.2643Z"
+                      fill="#FFFFFF"/>
+                <path d="M10.8731 38.6785L0.985352 33.2071V22.2643L10.8731 27.7357V38.6785Z" fill="#FFFFFF"/>
+                <path d="M20.7895 22.2643L20.7894 11.3215L30.6773 5.85014V16.7929L20.7895 22.2643Z" fill="#FFFFFF"/>
+                <path d="M30.6772 16.7929V5.85015L40.5936 0.378769V11.3215L30.6772 16.7929Z" fill="#FFFFFF"/>
+                <path d="M40.5938 0.378769L50.4814 5.85015V16.7929L40.5938 11.3215V0.378769Z" fill="#FFFFFF"/>
+                <path d="M50.4814 27.7357L40.5937 33.207L30.6772 27.7357L40.5937 22.2643L50.4814 27.7357Z"
+                      fill="#FFFFFF"/>
+                <path d="M40.5938 11.3215L50.4814 16.7929V27.7357L40.5938 22.2643V11.3215Z" fill="#FFFFFF"/>
+            </svg>
+        </div>
+    </div>
+    <div class="mt-4">
+        <div class="text-base font-semibold leading-6 text-gray-900">
+            <a href="https://youtu.be/a5kmr-OlpME" class="focus:outline-none" target="_blank" rel="noopener noreferrer">
+                <span class="absolute inset-0"></span>
+                CutCode
+            </a>
+        </div>
+        <div class="mt-2 text-sm text-gray-500">PHP-дайджест в видео формате на канале CutCode</div>
+    </div>
+    <div class="pointer-events-none absolute right-6 top-6 text-gray-300 group-hover:text-gray-400">
+        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z"/>
+        </svg>
+    </div>
+</div>                                            </div>
+                </div>
+                    </div>
+
+        <div class="mt-24">
+            <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div class="relative isolate overflow-hidden bg-gray-800 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24">
+        <div class="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Рассылка PHP-дайджестов
+        </div>
+        <div class="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-300">
+            Подпишитесь на рассылку, чтобы не пропустить новый выпуск
+        </div>
+        <div class="mt-10">
+            <form class="mx-auto flex max-w-md gap-x-4" method="POST" target="_blank"
+                  action="https://c8122b9e.sibforms.com/serve/MUIFADhvm7fo4qYUpowTB6UBEHlKP75eoCzYiEqd3WbAlxOcujcTQbVPbMA8G_kqnfxofKyRYF2FP-iQBEgHO9AOBNLVPGVpxGOfZ5qw_ZBlBcN02hUZG5epZrRMB3jhJkys_FmDydpc3Dz0sAphbtTVJJj8YYQFkR8twm0pZE2FsPurI6QhQp80haKg85Ugu_n7FyuEnRmrN2al"
+                  id="sib-form">
+                <input name="EMAIL" type="email" autocomplete="email" required
+                       class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+                       placeholder="Ваша электронная почта">
+                <button type="submit"
+                        class="button">
+                    Подписаться
+                </button>
+
+                <input type="hidden" name="locale" value="ru">
+                <input type="hidden" name="html_type" value="simple">
+            </form>
+            <div class="mt-4 text-sm leading-6 text-gray-300 text-center">
+                <p>Нажимая «Подписаться» я даю согласие на обработку
+                    <a href="/privacy" class="border-b">персональных данных</a>.</p>
+                <p>Мы заботимся о ваших данных и не будем злоупотреблять доверием.</p>
+            </div>
+        </div>
+    </div>
+</div>        </div>
+    </div>
+
+<footer class="bg-gray-900">
+    <div class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+        <div class="flex justify-center items-center space-x-6 md:order-2">
+            <a href="https://t.me/phpdigest" class="text-white hover:text-gray-400" target="_blank"
+               rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor">
+                    <path d="M 20.572266 3.0117188 C 20.239891 2.9764687 19.878625 3.028375 19.515625 3.171875 C 19.065625 3.348875 12.014406 6.3150313 5.4414062 9.0820312 L 3.2695312 9.9960938 C 2.4285313 10.337094 2.0039062 10.891672 2.0039062 11.638672 C 2.0039062 12.161672 2.22525 12.871063 3.28125 13.289062 L 6.9472656 14.757812 C 7.2642656 15.708813 8.0005469 17.916906 8.1855469 18.503906 C 8.2955469 18.851906 8.5733906 19.728594 9.2753906 19.933594 C 9.4193906 19.982594 9.5696563 20.007813 9.7226562 20.007812 C 10.165656 20.007812 10.484625 19.801641 10.640625 19.681641 L 12.970703 17.710938 L 15.800781 20.328125 C 15.909781 20.439125 16.486719 21 17.261719 21 C 18.228719 21 18.962234 20.195016 19.115234 19.416016 C 19.198234 18.989016 21.927734 5.2870625 21.927734 5.2890625 C 22.172734 4.1900625 21.732219 3.6199531 21.449219 3.3769531 C 21.206719 3.1694531 20.904641 3.0469688 20.572266 3.0117188 z M 19.910156 5.171875 C 19.533156 7.061875 17.478016 17.378234 17.166016 18.865234 L 13.029297 15.039062 L 10.222656 17.416016 L 11 14.375 C 11 14.375 16.362547 8.9468594 16.685547 8.6308594 C 16.945547 8.3778594 17 8.2891719 17 8.2011719 C 17 8.0841719 16.939781 8 16.800781 8 C 16.675781 8 16.506016 8.1197812 16.416016 8.1757812 C 15.272669 8.8885973 10.404094 11.662239 8.0078125 13.025391 L 4.53125 11.636719 L 6.21875 10.927734 C 10.51775 9.1177344 18.174156 5.893875 19.910156 5.171875 z"></path>
+                </svg>
+            </a>
+            <a href="https://github.com/phpdigest" class="text-white hover:text-gray-400"
+               target="_blank" rel="noopener noreferrer">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                          d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                          clip-rule="evenodd"/>
+                </svg>
+            </a>
+            <a href="https://phpc.social/@digest" class="text-white hover:text-gray-400" target="_blank"
+               rel="noopener noreferrer">
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="mt-8 md:order-1 md:mt-0">
+            <div class="text-center leading-5 text-white">&copy; 2024, PHP-дайджест</div>
+        </div>
+    </div>
+</footer>
+<script defer src="/assets/build/js/main.js?id=da2204b01db84bf12fdde32ea80aa267"></script>
+</body>
+</html>
