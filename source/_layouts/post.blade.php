@@ -16,6 +16,15 @@
                 @yield('content')
             </div>
 
+            @if($ad = $page->ad)
+                <div class="mt-10 sm:mt-16">
+                    <a href="{{ $ad['url'] }}" rel="noopener noreferrer" target="_blank">
+                        <img src="{{ $ad['image'] }}" alt="{{ $ad['title'] }}"
+                             class="h-full w-full object-cover object-center overflow-hidden rounded-lg"/>
+                    </a>
+                </div>
+            @endif
+
             @if(is_array($page->author))
                 <div class="mt-10 space-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16">
                     <div class="grid grid-cols-2">

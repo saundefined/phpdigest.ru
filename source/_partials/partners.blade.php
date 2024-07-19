@@ -8,7 +8,7 @@
         <div class="mt-12 grid gap-8 md:mt-16 md:grid-cols-2 lg:grid-cols-3">
             @include('_partials.partners-item', [
                 'title' => 'Слоны PHP',
-                'description' => 'Купить мягкую игрушку «Слон PHP», посвящённую выходу PHP 8',
+                'description' => 'Купить мягкую игрушку со скидкой по промокоду «PHPDIGEST»',
                 'url' => 'https://elephpants.ru/',
                 'image' => '/assets/images/logo/elephpants.jpeg'
             ])
