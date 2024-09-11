@@ -23,7 +23,7 @@ external:
 
 ⛔️ Ветка PHP 8.1 прекратила активную поддержку и будет получать только обновления с исправлениями безопасности.
 
-### Вышел [PhpStorm 2023.3](https://www.jetbrains.com/ru-ru/phpstorm/whatsnew/)
+### Вышел [PhpStorm 2023.3](https://www.jetbrains.com/ru-ru/phpstorm/whatsnew/2022-3/)
 
 В этом большом обновлении представлена официальная версия AI Assistant, добавлена поддержка Pest и PHP 8.3, улучшена
 поддержка Symfony, улучшен интерфейс и многое другое.
